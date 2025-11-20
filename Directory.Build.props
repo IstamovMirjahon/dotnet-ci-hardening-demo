@@ -1,5 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿
 	<PropertyGroup>
 		<!-- NET analizatorlarini yoqish -->
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -23,12 +22,3 @@
 		<WarningsNotAsErrors>$(WarningsNotAsErrors);CS1591</WarningsNotAsErrors>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<!-- StyleCop Analyzers paketini qo‘shish -->
-		<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" PrivateAssets="All" />
-
-		<!-- Roslynator analizatorlarini qo‘shish -->
-		<PackageReference Include="Roslynator.Analyzers" Version="4.12.4" PrivateAssets="All" />
-	</ItemGroup>
-
-</Project>
