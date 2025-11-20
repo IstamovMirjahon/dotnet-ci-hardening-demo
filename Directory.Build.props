@@ -1,23 +1,21 @@
-﻿<PropertyGroup>
-	<!-- NET analizatorlarini yoqish -->
-	<EnableNETAnalyzers>true</EnableNETAnalyzers>
+﻿<Project>
+	<PropertyGroup>
+		<!-- NET analizatorlarini yoqish -->
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 
-	<!-- Eng so‘nggi qoidalarni ishlatish -->
-	<AnalysisLevel>latest</AnalysisLevel>
+		<!-- Eng so‘nggi qoidalarni ishlatish -->
+		<AnalysisLevel>latest</AnalysisLevel>
 
-	<!-- Kod stilini build vaqtida majburlash 
-		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>-->
+		<!-- Continuous Integration build rejimi uchun sozlamalar -->
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+		<Deterministic>true</Deterministic>
+		<DebugType>portable</DebugType>
 
-	<!-- Continuous Integration build rejimi uchun sozlamalar -->
-	<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-	<Deterministic>true</Deterministic>
-	<DebugType>portable</DebugType>
+		<!-- Warninglarni xatoga aylantirmaslik -->
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<StyleCopAnalyzersTreatErrorsAsWarnings>true</StyleCopAnalyzersTreatErrorsAsWarnings>
 
-	<!-- Warninglarni xatoga aylantirmaslik -->
-	<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-	<StyleCopAnalyzersTreatErrorsAsWarnings>true</StyleCopAnalyzersTreatErrorsAsWarnings>
-
-	<!-- Maxsus warninglarni xatoga aylantirmaslik -->
-	<WarningsNotAsErrors>$(WarningsNotAsErrors);CS1591</WarningsNotAsErrors>
-</PropertyGroup>
-
+		<!-- Maxsus warninglarni xatoga aylantirmaslik -->
+		<WarningsNotAsErrors>$(WarningsNotAsErrors);CS1591</WarningsNotAsErrors>
+	</PropertyGroup>
+</Project>
