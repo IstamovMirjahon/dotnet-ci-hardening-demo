@@ -11,4 +11,8 @@ public class Class1
     {
         return a - b;
     }
+    public int Multiply()
+    {
+        return a * b;
+    }
 }
