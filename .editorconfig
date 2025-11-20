@@ -8,28 +8,19 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# Usings and ordering
-dotnet_sort_system_directives_first = true:warning
-dotnet_separate_import_directive_groups = true:warning
+# Using direktivalar va ularning tartibi
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
 
-# Qualification rules
-dotnet_style_qualification_for_field = false:warning
-dotnet_style_qualification_for_property = false:warning
-dotnet_style_qualification_for_method = false:warning
+# Field, property va method chaqiruvlarida this ishlatish
+dotnet_style_qualification_for_field = false
+dotnet_style_qualification_for_property = false
+dotnet_style_qualification_for_method = false
 
-# Analyzer examples
-dotnet_diagnostic.IDE0005.severity = warning   # Remove unused usings
-dotnet_diagnostic.SA1200.severity = warning    # Using placement
-dotnet_diagnostic.RCS1213.severity = warning   # Remove unused members
+# Ogohlantirishlar
+dotnet_diagnostic.IDE0005.severity = warning   # Foydalanilmagan using-larni olib tashlash
+dotnet_diagnostic.SA1200.severity = warning    # Using joylashuvi
+dotnet_diagnostic.RCS1213.severity = warning   # Foydalanilmagan members
 
-# Optional: relax doc comment warnings
-dotnet_diagnostic.CS1591.severity = none
-
-# Disable StyleCop file header & XML comment rules
-dotnet_diagnostic.SA1633.severity = none
-dotnet_diagnostic.SA1600.severity = none   # Disable XML documentation requirement
-dotnet_diagnostic.SA1636.severity = none
-dotnet_diagnostic.SA1638.severity = none
-dotnet_diagnostic.SA0001.severity = none
-dotnet_diagnostic.CS1591.severity = none
-dotnet_diagnostic.IDE0005.severity = none
+# XML documentationni o‘chirish
+dotnet_diagnostic.SA1600.severity = none       # Elementlar uchun XML doc talab qilinmaydi
