@@ -2,7 +2,7 @@ namespace Acme.Calculator;
 
 public class Class1
 {
-    int a =3, b=4;
+    int a = 3, b = 4;
     public int Add()
     {
         return a + b;
