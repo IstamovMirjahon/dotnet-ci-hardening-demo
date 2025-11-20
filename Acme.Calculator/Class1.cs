@@ -1,6 +1,5 @@
-﻿namespace Acme.Calculator;
+namespace Acme.Calculator;
 
 public class Class1
 {
-
 }
